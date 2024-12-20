@@ -1,0 +1,121 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #ffc857;
+    animation: glow 2s infinite alternate;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 350px;
+    animation: slide-in 1s ease-in-out;
+    /* visibility: hidden; */
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffc857;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #ffc857;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffc857, #ff7c00);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e3c72;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff7c00, #ffc857);
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+#connectbtn{
+   
+    background: linear-gradient(135deg, #ffc857, #ff7c00);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #eb0c0c;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+p {
+    color: red;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/* Animations */
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px #ffc857, 0px 0px 20px #ff7c00;
+    }
+    to {
+        text-shadow: 0px 0px 20px #ff7c00, 0px 0px 30px #ffc857;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
